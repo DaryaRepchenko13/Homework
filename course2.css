@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .back {
+    height: 1024px;
+    background-image: url(IMG/Header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header__header {
+    display: flex;
+    flex-direction: column;
+    column-gap: 32px;
+  }
+
+  .header__title {
+    width: 788px;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 217px;
+  }
+
+  .header__text {
+    width: 481px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 32px;
+  }
+
+  .header__button {
+    width: 234px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+  }
+
+  .header__button:hover {
+    border-radius: 30px;
+    background: #EB443F;
+  }
+
+  .content {
+    height: 556px;
+    background: #000915;
+    padding-top: 128px;
+  }
+
+  .content__cart {
+    margin-top: 32px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .content__item {
+    width: 379px;
+    height: 300px;
+    grid-column: span 4;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+  }
+
+  .content__item_1 {
+    background-image: url(IMG/item1.jpg);
+  }
+
+  .content__item_2 {
+    background-image: url(IMG/item2.jpg);
+  }
+
+  .content__item_3 {
+    background-image: url(IMG/item3.jpg);
+  }
