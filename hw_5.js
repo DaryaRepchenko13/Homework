@@ -1,86 +1,86 @@
-// // Задание 1: 
+// Задание 1: 
 
-// function sum(a, b) {
-//   return a < b ? a : b;
-// }
-// console.log(sum(4,8));
+function sum(a, b) {
+  return a < b ? a : b;
+}
+console.log(sum(4,8));
 
-// // Задание 2: 
+// Задание 2: 
 
-// const enterNumber = () => {
-//   let userEnter = Number(prompt('Введите число!'))
+const enterNumber = () => {
+  let userEnter = Number(prompt('Введите число!'))
 
-//   if (userEnter % 2 === 0) {
-//     console.log('Число чётное');
+  if (userEnter % 2 === 0) {
+    console.log('Число чётное');
     
-//   } else {
-//     console.log('Число нечётное');
-//   }
+  } else {
+    console.log('Число нечётное');
+  }
 
-// }
-// enterNumber();
+}
+enterNumber();
 
 
-// // Задание 3.1: 
+// Задание 3.1: 
 
-// const squareNum = (num) => num ** 2;
-// console.log(squareNum(5));
+const squareNum = (num) => num ** 2;
+console.log(squareNum(5));
 
-// // Задание 3.2: 
+// Задание 3.2: 
 
-// function squareNum1(params) {
-//   return params ** 2;
-// }
-// const number = squareNum1(3);
-// console.log(number);
+function squareNum1(params) {
+  return params ** 2;
+}
+const number = squareNum1(3);
+console.log(number);
 
-// // Задание 4: 
+// Задание 4: 
 
-// function userAge() {
-//   let age = prompt('Сколько вам лет?');
+function userAge() {
+  let age = prompt('Сколько вам лет?');
 
-//   if (age < 0) {
-//     return('Вы ввели неправильное значение ')
-//   } else if (age <= 12) {
-//     return('Привет, друг!')
-//   } else {
-//     return('Добро пожаловать!')
-//   }
+  if (age < 0) {
+    return('Вы ввели неправильное значение ')
+  } else if (age <= 12) {
+    return('Привет, друг!')
+  } else {
+    return('Добро пожаловать!')
+  }
     
-// }
+}
 
-// alert(userAge());
+alert(userAge());
 
-// // Задание 5: 
+// Задание 5: 
 
-// function example(c,d) {
+function example(c,d) {
 
-// if (isNaN(c) || isNaN(d)) {
-//   return 'Одно или оба значения не являются числом';
-// } 
-// else {
-//  return c * d;
-// }
+if (isNaN(c) || isNaN(d)) {
+  return 'Одно или оба значения не являются числом';
+} 
+else {
+ return c * d;
+}
 
-// }
-// console.log(example(12,5));
-// console.log(example('v','f'));
+}
+console.log(example(12,5));
+console.log(example('v','f'));
 
 
-// // Задание 6: 
+// Задание 6: 
 
-// function askNumber() {
-//     const userNumber = prompt('Ввведите число');
+function askNumber() {
+    const userNumber = prompt('Ввведите число');
 
-//     if(isNaN (userNumber) || userNumber === "" || userNumber === " " || userNumber === null) {
-//       console.log('Переданный параметр не является числом')
-//     } else {
-//       console.log(`${userNumber} в кубе равняется ${userNumber ** 3}`);
-//     }
+    if(isNaN (userNumber) || userNumber === "" || userNumber === " " || userNumber === null) {
+      console.log('Переданный параметр не является числом')
+    } else {
+      console.log(`${userNumber} в кубе равняется ${userNumber ** 3}`);
+    }
 
-// }
+}
 
-// askNumber();
+askNumber();
 
 // Задание 7: 
 
