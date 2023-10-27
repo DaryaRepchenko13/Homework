@@ -21,5 +21,3 @@ function whatSeason() {
 
 }
 
-whatSeason();
-
