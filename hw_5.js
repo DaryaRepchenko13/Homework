@@ -1,9 +1,9 @@
 // Задание 1: 
 
 function sum(a, b) {
-  return a;
+  return a < b ? a : b;
 }
-console.log(4, 8);
+console.log(sum(4,8));
 
 // Задание 2: 
 
@@ -24,30 +24,34 @@ enterNumber();
 // Задание 3.1: 
 
 const squareNum = (num) => num ** 2;
+console.log(squareNum(5));
 
 // Задание 3.2: 
 
-const squareNum1 = (num) => num ** 2;
+function squareNum1(params) {
+  return params ** 2;
+}
+const number = squareNum1(3);
+console.log(number);
 
 // Задание 4: 
 
 function userAge() {
-  const userNumber = prompt('Сколько вам лет?');
+  let age = prompt('Сколько вам лет?');
 
-  if(isNaN (userNumber) || userNumber === "" || userNumber === " " || userNumber === null) {
-    console.log('Переданный параметр не является числом')
+  if (age < 0) {
+    return('Вы ввели неправильное значение ')
+  } else if (age <= 12) {
+    return('Привет, друг!')
   } else {
-    console.log(`${userNumber} в кубе равняется ${userNumber ** 3}`);
+    return('Добро пожаловать!')
   }
-
+    
 }
 
-userAge();
+alert(userAge());
 
 // Задание 5: 
-
-let c = prompt('Введите первое число');
-let d = prompt('Введите второе число');
 
 function example(c,d) {
 
@@ -55,12 +59,12 @@ if (isNaN(c) || isNaN(d)) {
   return 'Одно или оба значения не являются числом';
 } 
 else {
- 
+ return c * d;
 }
 
 }
-console.log(example(c * d));
-
+console.log(example(12,5));
+console.log(example('v','f'));
 
 
 // Задание 6: 
@@ -80,52 +84,55 @@ askNumber();
 
 // Задание 7: 
 
-const circle1 = {
- radius: 5,
- pi: 3.14,
+function getCircleArea() {
+  return Math.PI * this.radius ** 2;
+}
+function getCirclePerimeter() {
+  return 2 * Math.PI * this.radius;
+}
 
+let circle1 = {
+ radius: 5,
  getArea: getCircleArea,
- getPerimetr: getCirclePerimeter,
+ getPerimeter: getCirclePerimeter,
 
 };
 
-const circle2 = {
+let circle2 = {
   radius: 10,
-  pi: 3.14,
- 
-  getArea: getCircleArea,
-  getPerimetr: getCirclePerimeter,
+ getArea: getCircleArea,
+  getPerimeter: getCirclePerimeter,
 
 };
 
 console.log(circle1.getArea());
-console.log(Math.floor(getCircle1Perimeter()));
+console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
-console.log(Math.floor(getCircle2Perimeter()));
+console.log(circle2.getPerimeter());
 
-// Задание 8:
+// // Задание 8:
 
-function whatSeason() {
-  let month = Number(prompt(`Введите номер месяца`));
+// function whatSeason() {
+//   let month = Number(prompt(`Введите номер месяца`));
 
-  if (month === 1 || month === 2 || month === 12) {
-    return alert(`Зима`);
+//   if (month === 1 || month === 2 || month === 12) {
+//     return alert(`Зима`);
     
-  } else if (month === 3 || month === 4 || month === 5) {
-    return alert(`Весна`);
+//   } else if (month === 3 || month === 4 || month === 5) {
+//     return alert(`Весна`);
 
-  } else if (month === 6 || month === 7 || month === 8) {
-    return alert(`Лето`);
+//   } else if (month === 6 || month === 7 || month === 8) {
+//     return alert(`Лето`);
 
-  } else if (month === 9 || month === 10 || month === 11) {
-    return alert(`Осень`);
+//   } else if (month === 9 || month === 10 || month === 11) {
+//     return alert(`Осень`);
 
-  }  else {
-    return alert(`Вы ввели неверное значение`);
+//   }  else {
+//     return alert(`Вы ввели неверное значение`);
 
-  }
+//   }
 
-}
+// }
 
-whatSeason();
+// whatSeason();
 
