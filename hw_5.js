@@ -23,33 +23,36 @@ enterNumber();
 
 // Задание 3.1: 
 
-const squareNum = (num) => num ** 2;
-console.log(squareNum(5));
+function squareNum(num) {
+  console.log(num * num);
+}
+square(2);
 
 // Задание 3.2: 
 
-function squareNum1(params) {
-  return params ** 2;
+function squareNum1(number) {
+  return(number * number);
 }
-const number = squareNum1(3);
-console.log(number);
+console.log(squareNum1(8));
 
 // Задание 4: 
 
-function userAge() {
+function getUserAge() {
   let age = prompt('Сколько вам лет?');
 
-  if (age < 0) {
-    return('Вы ввели неправильное значение ')
+  if (isNaN(age) || age === "" || age === null || age === " ") {
+    return('Не число');
+  } else if (age < 0) {
+    return('Вы ввели неправильное значение!');
   } else if (age <= 12) {
-    return('Привет, друг!')
-  } else {
-    return('Добро пожаловать!')
+    return('Привет, друг!');
+  } else if (age >= 13) {
+    return("Добро пожаловать!");
   }
     
 }
 
-alert(userAge());
+console.log(getUserAge());
 
 // Задание 5: 
 
