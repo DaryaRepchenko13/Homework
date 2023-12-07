@@ -172,6 +172,65 @@ a {
   border-radius: 30px;
   background: #EB443F;
 }
+.game__image {
+  margin-top: 233px;
+}
+
+.gameWords {
+  height: 800px;
+  background-image: url(IMG/game_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gameWords__part {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 135px;
+}
+.gameWords__box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 282px;
+}
+.gameWords__title {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.gameWords__text {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.gameWords__button {
+  width: 234px;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+}
+.gameWords__button:hover {
+  border-radius: 30px;
+  background: #EB443F;
+}
+.gameWords__image {
+  margin-top: 233px;
+}
 
 @media (max-width: 600px) {
   .center {
@@ -199,7 +258,7 @@ a {
     line-height: 22px;
   }
   .content {
-    width: auto;
+    width: 100%;
     height: 1221px;
     padding-left: 16px;
     padding-right: 16px;
@@ -212,9 +271,12 @@ a {
   }
   .content__item {
     width: 343px;
+    height: 300px;
+    border-radius: 16px;
   }
   .game {
-    width: auto;
+    width: 100%;
+    height: 654px;
   }
   .game__part {
     display: flex;
@@ -235,11 +297,47 @@ a {
     font-size: 32px;
   }
   .game__text {
+    width: 343px;
     text-align: center;
     font-size: 14px;
     line-height: 22px;
   }
   .game__image {
+    width: 344px;
+    height: 231px;
+    margin-top: 64px;
+  }
+  .gameWords {
     width: 100%;
+    height: 654px;
+  }
+  .gameWords__part {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-position: center;
+    gap: 64px;
+  }
+  .gameWords__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    gap: 32px;
+  }
+  .gameWords__title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .gameWords__text {
+    width: 343px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .gameWords__image {
+    width: 344px;
+    height: 231px;
+    margin-top: 64px;
   }
 }/*# sourceMappingURL=course2.css.map */
