@@ -1,5 +1,6 @@
 @media (max-width: 600px) {
-    .center {
+    .back {
+        width: 100%;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -50,6 +51,8 @@
     .game {
         width: 100%;
         height: 654px;
+        padding-left: 16px;
+        padding-right: 16px;
 
         &__part {
             display: flex;
@@ -60,6 +63,7 @@
         }
 
         &__box {
+            margin-top: 51px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -80,9 +84,9 @@
         }
 
         &__image {
-            width: 344px;
-            height: 231px;
+            width: 100%;
             margin-top: 64px;
+            margin-bottom: 85px;
 
 
         }
@@ -92,6 +96,8 @@
     .gameWords {
         width: 100%;
         height: 654px;
+        padding-left: 16px;
+        padding-right: 16px;
 
         &__part {
             display: flex;
@@ -102,6 +108,7 @@
         }
 
         &__box {
+            margin-top: 51px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -110,6 +117,7 @@
         }
 
         &__title {
+            margin-top: 51px;
             text-align: center;
             font-size: 32px;
         }
@@ -122,8 +130,7 @@
         }
 
         &__image {
-            width: 344px;
-            height: 231px;
+            width: 100%;
             margin-top: 64px;
 
 
