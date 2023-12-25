@@ -11,7 +11,7 @@
 //     const string = start.toLowerCase();
 //     return arr.filter((str) => str.toLowerCase().includes(string));
 
-// }
+// } 
 
 // console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); // ['кошка', 'комар']
 // console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
@@ -105,40 +105,32 @@
 // console.log(formDate(myDate));
 
 
+// // Задание 11:
 
+// let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+// fruits = fruits.sort(() => Math.random() - 0.5);
+// alert(fruits);
 
+// let firstFruit = prompt("Чему равнялся первый элемент массива?");
+// let lastFruit = prompt("Чему равнялся последний элемент массива?");
 
-// Задание 11:
+// for (let i = 0; i < fruits.length; i++) {
 
-let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-fruits = fruits.sort(() => Math.random() - 0.5);
-alert(fruits);
-
-let firstFruit = prompt("Чему равнялся первый элемент массива?");
-let lastFruit = prompt("Чему равнялся последний элемент массива?");
-
-for (let i = 0; i < fruits.length; i++) {
-
-    if (firstFruit === "" || firstFruit === " " || firstFruit === null || lastFruit === "" || lastFruit === " " || lastFruit === null) {
-        alert("Ошибка элемента");
-    } else if (fruits[0].toUpperCase().includes(firstFruit.toUpperCase()) && fruits[fruits.length - 1].toLocaleUpperCase().includes(lastFruit.toUpperCase())) {
-        alert('Поздравляю с победой!Вы угадали!');
-    } else if (fruits[0].toUpperCase().includes(firstFruit.toUpperCase()) || fruits[fruits.length - 1].toLocaleUpperCase().includes(lastFruit.toUpperCase())) {
-        alert('Вы были близки к победе!');
-    } else {
-        alert("Вы не угадали((((")
-    }    
-    break
+//     if (firstFruit === "" || firstFruit === " " || firstFruit === null || lastFruit === "" || lastFruit === " " || lastFruit === null) {
+//         alert("Ошибка элемента");
+//     } else if (fruits[0].toUpperCase().includes(firstFruit.toUpperCase()) && fruits[fruits.length - 1].toLocaleUpperCase().includes(lastFruit.toUpperCase())) {
+//         alert('Поздравляю с победой!Вы угадали!');
+//     } else if (fruits[0].toUpperCase().includes(firstFruit.toUpperCase()) || fruits[fruits.length - 1].toLocaleUpperCase().includes(lastFruit.toUpperCase())) {
+//         alert('Вы были близки к победе!');
+//     } else {
+//         alert("Вы не угадали((((")
+//     }    
+//     break
     
-}
+// }
 
 
 
 
-// Задание 12:
 
-
-
-
-// Задание 13:
 
